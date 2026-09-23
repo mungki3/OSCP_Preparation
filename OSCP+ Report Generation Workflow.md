@@ -1,7 +1,5 @@
 # OSCP+ Report Generation Workflow
 
-# OSCP+ Report Generation Workflow
-
 Use this workflow to keep the report synchronized with exam notes, then produce the final Markdown and PDF deliverables.
 
 ## Source template
