@@ -1,6 +1,6 @@
 # Scanning & Enumeration
 
-Identify every running service, version, and misconfiguration. This is where most OSCP boxes are won or lost. **enum is the single most-practiced skill in your tracker.**
+Identify every running service, version, and misconfiguration. This is where most OSCP boxes are won or lost. 
 
 ## Comprehensive port scanning
 
@@ -34,14 +34,6 @@ snmp-check target.com -c public
 ldapsearch -h target.com -x -b "dc=target,dc=com"
 ```
 
-### PRTG / monitoring web apps
-
-> Practice: [Netmon](https://app.notion.com/p/Netmon-316c3dbf5cad80c89e6ece01df28aed5?pvs=21) (HTB)
-> 
-
-> Path traversal practice: [Servmon](https://app.notion.com/p/Servmon-316c3dbf5cad8014af0deed832cde2c6?pvs=21) (HTB)
-> 
-
 ## Directory & file discovery
 
 Do not stop at root. Check /admin, /api, /backup, /upload, /.git, /.env.
@@ -50,9 +42,6 @@ Do not stop at root. Check /admin, /api, /backup, /upload, /.git, /.env.
 gobuster dir -u http://target.com -w /usr/share/wordlists/common.txt
 ffuf -u http://target.com/FUZZ -w wordlist.txt -fs 1024 -fw 100
 ```
-
-> API enumeration practice: [Mentor](https://app.notion.com/p/Mentor-316c3dbf5cad80839dd6ee7ae0d117e8?pvs=21) (HTB) · [Xposedapi](https://app.notion.com/p/Xposedapi-2aec3dbf5cad80a8a59fd02631469d4c?pvs=21) (PG)
-> 
 
 ## Gap fixes
 
@@ -64,7 +53,7 @@ ffuf -u http://target.com/FUZZ -w wordlist.txt -fs 1024 -fw 100
 
 # --- SUPPLEMENT: real tools from your write-ups ---
 
-## Web content discovery (feroxbuster is your actual go-to, 26 boxes)
+## Web content discovery
 
 ```bash
 feroxbuster -u http://target -x php,txt,html -s 200,301,302,403 -w /usr/share/seclists/Discovery/Web-Content/raft-medium-words.txt
@@ -73,7 +62,7 @@ ffuf -u http://target -H "Host: FUZZ.target" -w subdomains.txt -fs <baseline>   
 whatweb -a3 http://target && nikto -h http://target
 ```
 
-## SMB / AD recon with netexec (nxc) - used on 15 boxes
+## SMB / AD recon with netexec
 
 ```bash
 nxc smb <ip>                         # host + domain + signing
