@@ -2,7 +2,7 @@
 
 # Pivoting & Tunnelling
 
-OSCP+ tests reaching an internal network from a foothold. ligolo-ng (your go-to) + chisel + ssh + proxychains.
+OSCP+ tests reaching an internal network from a foothold. ligolo-ng  + chisel + ssh + proxychains.
 
 ## ligolo-ng (preferred - full L3 tunnel)
 
@@ -53,7 +53,7 @@ proxychains -q nxc smb 10.10.10.0/24
 proxychains -q evil-winrm -i 10.10.10.5 -u user -p 'Pass'
 ```
 
-## Port-forward reminder from your notes
+## Port-forward reminder
 
 ```bash
 socat -ddd TCP-LISTEN:2345,fork TCP:ip.add.re.ss:5432
