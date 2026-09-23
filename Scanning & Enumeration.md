@@ -24,9 +24,6 @@ enum4linux-ng target.com
 nmap -p 139,445 --script smb-* target.com
 ```
 
-> Practice: [Cicada](https://app.notion.com/p/Cicada-316c3dbf5cad807fb642fe2a65e5fccf?pvs=21) (HTB)
-> 
-
 ### SNMP (161/UDP) - default community strings grant access
 
 ```bash
@@ -34,17 +31,11 @@ snmpwalk -c public -v1 target.com
 snmp-check target.com -c public
 ```
 
-> Practice: [Pandora](https://app.notion.com/p/Pandora-316c3dbf5cad8072bb77fe9696965652?pvs=21) (HTB) · [Mentor](https://app.notion.com/p/Mentor-316c3dbf5cad80839dd6ee7ae0d117e8?pvs=21) (HTB)
-> 
-
 ### LDAP (389/636) - unauth queries dump the directory
 
 ```bash
 ldapsearch -h target.com -x -b "dc=target,dc=com"
 ```
-
-> Practice: [Cicada](https://app.notion.com/p/Cicada-316c3dbf5cad807fb642fe2a65e5fccf?pvs=21) (HTB)
-> 
 
 ### PRTG / monitoring web apps
 
