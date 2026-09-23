@@ -1,4 +1,4 @@
-# Phase 2 - Scanning & Enumeration
+# Scanning & Enumeration
 
 Identify every running service, version, and misconfiguration. This is where most OSCP boxes are won or lost. **enum is the single most-practiced skill in your tracker.**
 
