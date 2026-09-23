@@ -1,14 +1,10 @@
 # OSCP_Preparation
-A collection of resources that may help your OSCP preparation
+A collection of resources that may help your OSCP preparation.
 
-[32f32f2](AD Kill-Chain.md)
+## Markdown documents
 
-[AD Kill-Chain.md](AD Kill-Chain.md)
-
-[OSCP+ Report Generation Workflow.md] (OSCP+ Report Generation Workflow.md)
-
-[Pivoting & Tunnelling.md](Pivoting & Tunnelling.md)
-
-[Privilege Escalation & Post-Exploitation.md](Privilege Escalation & Post-Exploitation.md)
-
-[Scanning & Enumeration.md](Scanning & Enumeration.md)
+- [AD Kill-Chain](./AD%20Kill-Chain.md)
+- [OSCP+ Report Generation Workflow](./OSCP%2B%20Report%20Generation%20Workflow.md)
+- [Pivoting & Tunnelling](./Pivoting%20%26%20Tunnelling.md)
+- [Privilege Escalation & Post-Exploitation](./Privilege%20Escalation%20%26%20Post-Exploitation.md)
+- [Scanning & Enumeration](./Scanning%20%26%20Enumeration.md)
